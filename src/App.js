@@ -2,6 +2,11 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const handleSubmit = () => {
+    alert('wow');
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +22,11 @@ function App() {
         >
           Learn React
         </a>
+        <h1>Welcome</h1>
+
+        <input type="text" id="input1"/> <br />
+        <input type="text" id="input2"/> <br />
+        <button type="submit" onClick={handleSubmit}>Submit</button>
       </header>
     </div>
   );
